@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #006666;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.PortadaController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="717.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/portada.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnIniciar" layoutX="404.0" layoutY="314.0" mnemonicParsing="false" onAction="#metodoBotonIniciar" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #FF3333;" text="Iniciar Experiencia" textAlignment="JUSTIFY" textFill="WHITE">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.5" color="#da6060" height="26.93" radius="17.4125" width="44.72" />
+         </effect>
+      </Button>
+      <Button fx:id="btnSalir" layoutX="202.0" layoutY="314.0" mnemonicParsing="false" onAction="#metodoBotonSalir" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #FF3333;" text="Salir" textAlignment="JUSTIFY" textFill="WHITE">
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.13" color="#ff7575" height="50.65" radius="24.825" width="50.65" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="128.0" fitWidth="126.0" layoutX="287.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/simbolo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
